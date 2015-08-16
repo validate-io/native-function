@@ -1,6 +1,6 @@
 Native Function
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
 > Validates if a value is a native function.
 
@@ -106,8 +106,8 @@ Copyright &copy; 2015. Athan Reines.
 [travis-image]: http://img.shields.io/travis/validate-io/native-function/master.svg
 [travis-url]: https://travis-ci.org/validate-io/native-function
 
-[coveralls-image]: https://img.shields.io/coveralls/validate-io/native-function/master.svg
-[coveralls-url]: https://coveralls.io/r/validate-io/native-function?branch=master
+[codecov-image]: https://img.shields.io/codecov/c/github/validate-io/native-function/master.svg
+[codecov-url]: https://codecov.io/github/validate-io/native-function?branch=master
 
 [dependencies-image]: http://img.shields.io/david/validate-io/native-function.svg
 [dependencies-url]: https://david-dm.org/validate-io/native-function
