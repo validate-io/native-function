@@ -1,4 +1,4 @@
-native-function
+Native Function
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,41 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-native-function' );
+var isNative = require( 'validate.io-native-function' );
 ```
 
-#### foo( value )
+#### isNative( value )
 
-What does this function do?
+Validates if a `value` is a native `function`.
+
+``` javascript
+var bool = isNative( Math.sqrt );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-native-function' );
+var isNative = require( 'validate.io-native-function' );
+
+console.log( isNative( Math.sqrt ) );
+// returns true
+
+console.log( isNative( String ) );
+// returns true
+
+console.log( isNative( Object.prototype.toString ) );
+// returns true
+
+console.log( isNative( Int16Array ) );
+// returns true
+
+console.log( isNative( function(){} ) );
+// returns false
+
+console.log( isNative( null ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,
